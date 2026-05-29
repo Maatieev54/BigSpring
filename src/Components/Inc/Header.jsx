@@ -95,23 +95,23 @@ export default function Header() {
 
                <ul className="flex flex-col gap-8 font-semibold text-sm text-slate-900 lg:flex-row max-lg:p-6">
                   <li>
-                     <NavLink end className={({ isActive }) => `${isActive ? 'text-[#0ba8a7]' : ''} hover:text-[#0ba8a7] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded`} to={'/'}>Home</NavLink>
+                     <NavLink end onClick={closeMenu} className={({ isActive }) => `${isActive ? 'text-[#0ba8a7]' : ''} hover:text-[#0ba8a7] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded`} to={'/'}>Home</NavLink>
                   </li>
                   <li>
-               <NavLink className={({ isActive }) => `${isActive ? 'text-[#0ba8a7]' : ''} hover:text-[#0ba8a7] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded`} to={'/Blog'}>Blog</NavLink>
+               <NavLink onClick={closeMenu} className={({ isActive }) => `${isActive ? 'text-[#0ba8a7]' : ''} hover:text-[#0ba8a7] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded`} to={'/Blog'}>Blog</NavLink>
                   </li>
                   <li>
-                   <NavLink className={({ isActive }) => `${isActive ? 'text-[#0ba8a7]' : ''} hover:text-[#0ba8a7] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded`} to={'/Pricing'}>Pricing</NavLink>
+                   <NavLink onClick={closeMenu} className={({ isActive }) => `${isActive ? 'text-[#0ba8a7]' : ''} hover:text-[#0ba8a7] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded`} to={'/Pricing'}>Pricing</NavLink>
                   </li>
                   <li>
-                    <NavLink className={({ isActive }) => `${isActive ? 'text-[#0ba8a7]' : ''} hover:text-[#0ba8a7] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded`} to={'/Contact'}>Contact</NavLink>
+                    <NavLink onClick={closeMenu} className={({ isActive }) => `${isActive ? 'text-[#0ba8a7]' : ''} hover:text-[#0ba8a7] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded`} to={'/Contact'}>Contact</NavLink>
                   </li>
                   <li>
-                       <NavLink className={({ isActive }) => `${isActive ? 'text-[#0ba8a7]' : ''} hover:text-[#0ba8a7] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded`} to={'/Faq'}>Faq</NavLink>
+                       <NavLink onClick={closeMenu} className={({ isActive }) => `${isActive ? 'text-[#0ba8a7]' : ''} hover:text-[#0ba8a7] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded`} to={'/Faq'}>Faq</NavLink>
                   </li>
                   <li>
                     
-               <Link to={'/Contact'}  className=" md:hidden py-2 px-3.5 text-sm rounded-3xl font-semibold cursor-pointer text-white border border-[#0BA8A7] 
+               <Link to={'/Contact'} onClick={closeMenu}  className=" md:hidden py-2 px-3.5 text-sm rounded-3xl font-semibold cursor-pointer text-white border border-[#0BA8A7] 
                   bg-[#0BA8A7] hover:scale-105  transition-all focus:outline-none focus-visible:ring-2">Get Started</Link>
                   </li>
                </ul>
